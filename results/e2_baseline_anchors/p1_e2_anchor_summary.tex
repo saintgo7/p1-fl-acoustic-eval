@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Reviewer-risk E2 non-federated training anchors. Centralized pooled trains one model on pooled normal data; local only trains one model per site. Both use the same 60-equivalent-epoch update budget as the main federated sweep.}
+\label{tab:p1-e2-training-anchors}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Anchor & $\alpha$ & $n$ & Mean & 95\% CI & Min--max \\
+\midrule
+Centralized pooled & pooled & 120 & 0.7618 & $\pm$0.0247 & 0.5134--0.9658 \\
+Local only & a0p05 & 120 & 0.7325 & $\pm$0.0244 & 0.4016--0.9578 \\
+Local only & a100 & 120 & 0.7128 & $\pm$0.0264 & 0.4454--0.9196 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Paired local-only anchor deltas against federated algorithms on matched machine-type, SNR, Dirichlet-alpha, and seed units. Positive values mean local-only training exceeded the federated comparator.}
+\label{tab:p1-e2-local-anchor-deltas}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+$\alpha$ & Comparator & $n$ & Mean $\Delta$ & 95\% CI \\
+\midrule
+a0p05 & Clustered FL & 120 & 0.0030 & $\pm$0.0097 \\
+a0p05 & FedAvg & 120 & 0.0104 & $\pm$0.0109 \\
+a0p05 & FedProx & 120 & 0.0176 & $\pm$0.0093 \\
+a0p05 & Personalized FL & 120 & -0.0029 & $\pm$0.0102 \\
+a100 & Clustered FL & 120 & -0.0325 & $\pm$0.0060 \\
+a100 & FedAvg & 120 & -0.0324 & $\pm$0.0066 \\
+a100 & FedProx & 120 & -0.0103 & $\pm$0.0033 \\
+a100 & Personalized FL & 120 & -0.0380 & $\pm$0.0060 \\
+\bottomrule
+\end{tabular}
+\end{table}

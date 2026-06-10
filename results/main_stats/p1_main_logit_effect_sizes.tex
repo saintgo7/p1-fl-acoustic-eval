@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Logit-AUROC sensitivity analysis for the main 5,760-run sweep. The fixed-effect model includes machine type, SNR, algorithm, their interactions, and Dirichlet alpha; partial $\eta^2$ again quantifies observed separation rather than causal dominance.}
+\label{tab:p1-logit-effect-sizes}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Term & df & $F$ & $p$ & Partial $\eta^2$ \\
+\midrule
+Machine type & 3 & 14245.2 & $<10^{-4}$ & 0.882 \\
+SNR & 2 & 11633.1 & $<10^{-4}$ & 0.803 \\
+Machine x SNR & 6 & 1354.6 & $<10^{-4}$ & 0.587 \\
+Algorithm & 3 & 114.5 & $<10^{-4}$ & 0.057 \\
+Dirichlet alpha & 5 & 62.4 & $<10^{-4}$ & 0.052 \\
+Machine x Algorithm & 9 & 17.6 & $<10^{-4}$ & 0.027 \\
+\midrule
+Seed ICC & -- & -- & -- & 0.086 \\
+\bottomrule
+\end{tabular}
+\end{table}
