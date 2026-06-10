@@ -659,6 +659,11 @@ def train_federated(config: dict[str, Any]) -> dict[str, Any]:
         site_payloads = _make_synthetic_site_payloads(
             n_normal, n_mels, n_frames, alpha, num_sites, seed, device
         )
+    elif config.get("dataset", "mimii") == "dcase2022":
+        import dcase22_adapter
+        site_payloads = dcase22_adapter.make_dcase22_site_data(
+            config, num_sites, n_mels, n_frames, alpha, seed, device
+        )
     else:
         import mimii_adapter
         site_payloads = mimii_adapter.make_mimii_site_data(

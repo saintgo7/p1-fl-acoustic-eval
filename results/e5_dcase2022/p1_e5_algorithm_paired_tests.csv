@@ -1,0 +1,4 @@
+comparison,n_matched_units,mean_delta,wilcoxon_p
+personalized - clustered_fl,120,0.0027855210130108415,0.20496489879172441
+personalized - fedavg,120,0.002090213771444437,0.6187764875102859
+personalized - fedprox,120,0.023571118122061342,2.5828295026021636e-10
